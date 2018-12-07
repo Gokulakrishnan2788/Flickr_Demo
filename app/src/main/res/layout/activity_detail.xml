@@ -1,0 +1,123 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/keyLine1"
+        />
+
+    <TextView
+        android:id="@+id/tvOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_toLeftOf="@+id/ivClose"
+        android:layout_margin="@dimen/keyLine1"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        tools:text="by gturedi"
+        />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/controlSizeMedium"
+        android:layout_height="@dimen/controlSizeMedium"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/keyLine1"
+        tools:src="@drawable/ic_close_24dp"
+        />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/lnrFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tvDate"
+            android:textColor="@android:color/white"
+            android:maxLines="2"
+            tools:text="winter is coming..\nfdfdf"
+            android:layout_marginLeft="@dimen/keyLine1"
+            android:layout_marginTop="@dimen/keyLine1"
+            android:layout_marginBottom="@dimen/keyLine1"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/tvTitle"
+            android:layout_marginRight="@dimen/keyLine1"
+            android:textColor="@android:color/white"
+            tools:text="24.12.2016"
+            />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginLeft="@dimen/keyLine1"
+            android:layout_marginRight="@dimen/keyLine1"
+            android:background="@android:color/white"
+            />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivInfo"
+                android:layout_width="@dimen/controlSizeSmall"
+                android:layout_height="@dimen/controlSizeSmall"
+                android:layout_margin="@dimen/keyLine1"
+                tools:src="@drawable/ic_info_outline_24dp"
+                />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivShare"
+                android:layout_width="@dimen/controlSizeSmall"
+                android:layout_height="@dimen/controlSizeSmall"
+                android:layout_toRightOf="@+id/ivInfo"
+                android:layout_alignBottom="@+id/ivInfo"
+                tools:src="@drawable/ic_share_24dp"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tvViewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/keyLine1"
+                android:textColor="@android:color/white"
+                tools:text="1224 Views"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
