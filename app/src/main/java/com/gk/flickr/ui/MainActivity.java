@@ -173,7 +173,7 @@ public class MainActivity
         getMenuInflater().inflate(R.menu.image_search_menu, menu);
       final  MenuItem mSearch = menu.findItem(R.id.action_search);
         final SearchView mSearchView = (SearchView) mSearch.getActionView();
-        mSearchView.setQueryHint("Search hear");
+        mSearchView.setQueryHint("Search..");
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
